@@ -20,7 +20,7 @@ class StaticPagesControllerTest < ActionController::TestCase
 
   test "should get about" do
     get :about
-    assert_respose :success
+    assert_response :success
     assert_select "title", "About | #{@base_title}"
   end
 
